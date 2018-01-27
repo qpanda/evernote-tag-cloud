@@ -11,13 +11,14 @@ In order to use **EvernoteTagCloud** you have to request a [DeveloperToken](http
 To use **EvernoteTagCloud** download the ``evernote-tag-cloud`` Git repository from GitHub and use ``pip`` to install all dependencies.
   
     $ wget https://github.com/qpanda/evernote-tag-cloud/archive/master.zip
-    $ unzip master.zip
+    $ unzip evernote-tag-cloud-master.zip
+	$ cd evernote-tag-cloud-master
     $ pip install -r REQUIREMENTS.pip
 
-**Note:** Installing [word_cloud](http://amueller.github.io/word_cloud/) using ``pip`` requires a compiler. Precompiled wheel packages for ``word_cloud``` are available, for more information please refer to the [README](https://github.com/amueller/word_cloud/blob/master/README.md) of the [word_cloud](https://github.com/amueller/word_cloud) project on GitHub.
+**Note:** Installing [word_cloud](http://amueller.github.io/word_cloud/) using ``pip`` requires a compiler. Precompiled wheel packages for ``word_cloud`` are available, for more information please refer to the [README](https://github.com/amueller/word_cloud/blob/master/README.md) of the [word_cloud](https://github.com/amueller/word_cloud) project on GitHub.
 
 ## Using EvernoteTagCloud
-Run ```EvernoteTagCloud.py -h``` to get usage information. All parameters except for the ``evernoteAuthToken`` (Evernote Developer Token / API Key) are optional.
+Run ```EvernoteTagCloud.py -h``` to get usage information. All parameters except for ``evernoteAuthToken`` (Evernote Developer Token / API Key) are optional.
 
     $ EvernoteTagCloud.py -h
     EvernoteTagCloud.py 0.1.0
@@ -53,23 +54,23 @@ Run ```EvernoteTagCloud.py -h``` to get usage information. All parameters except
       --tagColorScheme {viridis,plasma,inferno,magma,Greys,Purples,Blues,Greens,Oranges,Reds,YlOrBr,YlOrRd,OrRd,PuRd,RdPu,BuPu,GnBu,PuBu,YlGnBu,PuBuGn,BuGn,YlGn,binary,gist_yarg,gist_gray,gray,bone,pink,spring,summer,autumn,winter,cool,Wistia,hot,afmhot,gist_heat,copper,PiYG,PRGn,BrBG,PuOr,RdGy,RdBu,RdYlBu,RdYlGn,Spectral,coolwarm,bwr,seismic,Pastel1,Pastel2,Paired,Accent,Dark2,Set1,Set2,Set3,tab10,tab20,tab20b,tab20c,flag,prism,ocean,gist_earth,terrain,gist_stern,gnuplot,gnuplot2,CMRmap,cubehelix,brg,hsv,gist_rainbow,rainbow,jet,nipy_spectral,gist_ncar}
                             tag color scheme (default: Blues)TODO
 
-The [masks/] folder contains the Evernote Logo masks that can be used to create the tag cloud in the shape of the Evernote elephant logo.
+The [masks/](masks/) folder contains the Evernote Logo masks that can be used to create the tag cloud in the shape of the Evernote elephant logo.
 
 ## Examples
-An example tag cloud created from an Evernote account with 900+ notes and 500+ tags.    
+[examples/EvernoteTagCloud.png](examples/EvernoteTagCloud.png) is an example tag cloud created from an Evernote account with 900+ notes and 500+ tags.
 
 ![EvernoteTagCloudExample](examples/EvernoteTagCloud.png)
 
-The tag cloud was created by executing the following command.
+The tag cloud has been created by executing the following command.
 
     $ EvernoteTagCloud.py --imageFile examples/EvernoteTagCloud.png --maxTags 999 <evernoteAuthToken>
 
-An example tag cloud created from an Evernote account with 900+ notes and 500+ tags using the iconic Evernote elephant
+[examples/EvernoteTagCloud-LogoMask.png](examples/EvernoteTagCloud-LogoMask.png) is an example tag cloud created from an Evernote account with 900+ notes and 500+ tags using the iconic Evernote elephant
 logo as the mask.
 
 ![EvernoteTagCloud-LogoMask](examples/EvernoteTagCloud-LogoMask.png) 
 
-The tag cloud was created by executing the following command.
+The tag cloud has been created by executing the following command.
 
     $ EvernoteTagCloud.py --imageFile examples/EvernoteTagCloud-LogoMask.png --maskFile masks/EvernoteLogoMask-2048x2391.png --maxTags 999  <evernoteAuthToken>
 
