@@ -75,4 +75,4 @@ The tag cloud has been created by executing the following command.
     $ EvernoteTagCloud.py --imageFile examples/EvernoteTagCloud-LogoMask.png --maskFile masks/EvernoteLogoMask-2048x2391.png --maxTags 999  <evernoteAuthToken>
 
 ## License
-EvernoteTagCloud is licensed under the MIT license.
+**EvernoteTagCloud** is licensed under the MIT license.
