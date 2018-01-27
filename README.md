@@ -54,7 +54,7 @@ Run ```EvernoteTagCloud.py -h``` to get usage information. All parameters except
       --tagColorScheme {viridis,plasma,inferno,magma,Greys,Purples,Blues,Greens,Oranges,Reds,YlOrBr,YlOrRd,OrRd,PuRd,RdPu,BuPu,GnBu,PuBu,YlGnBu,PuBuGn,BuGn,YlGn,binary,gist_yarg,gist_gray,gray,bone,pink,spring,summer,autumn,winter,cool,Wistia,hot,afmhot,gist_heat,copper,PiYG,PRGn,BrBG,PuOr,RdGy,RdBu,RdYlBu,RdYlGn,Spectral,coolwarm,bwr,seismic,Pastel1,Pastel2,Paired,Accent,Dark2,Set1,Set2,Set3,tab10,tab20,tab20b,tab20c,flag,prism,ocean,gist_earth,terrain,gist_stern,gnuplot,gnuplot2,CMRmap,cubehelix,brg,hsv,gist_rainbow,rainbow,jet,nipy_spectral,gist_ncar}
                             tag color scheme (default: Blues)TODO
 
-The [masks/](masks/) folder contains the Evernote Logo masks that can be used to create the tag cloud in the shape of the Evernote elephant logo.
+The [masks/](masks/) folder contains Evernote Logo masks that can be used to create a tag cloud in the shape of the iconic Evernote elephant logo.
 
 ## Examples
 [examples/EvernoteTagCloud.png](examples/EvernoteTagCloud.png) is an example tag cloud created from an Evernote account with 900+ notes and 500+ tags.
