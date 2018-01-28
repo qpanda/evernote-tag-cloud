@@ -5,7 +5,7 @@ A small Python script that generates a [tag cloud](https://en.wikipedia.org/wiki
 **EvernoteTagCloud** uses the [Evernote API](http://dev.evernote.com/doc/) to retrieve all tags and the number of notes each tag is associated with and then uses the [word_cloud](http://amueller.github.io/word_cloud/) library to generate a tag cloud.
 
 ## Prerequisites
-In order to use **EvernoteTagCloud** you have to request a [DeveloperToken](https://www.evernote.com/api/DeveloperToken.action) for your Evernote account.
+In order to use **EvernoteTagCloud** you have to request a [DeveloperToken](https://www.evernote.com/api/DeveloperToken.action) for your Evernote account. You may need to contact Evernote support to get the feature enabled for your account.
 
 ## Installation
 To use **EvernoteTagCloud** download the ``evernote-tag-cloud`` Git repository from GitHub and use ``pip`` to install all dependencies.
@@ -14,6 +14,8 @@ To use **EvernoteTagCloud** download the ``evernote-tag-cloud`` Git repository f
     $ unzip evernote-tag-cloud-master.zip
 	$ cd evernote-tag-cloud-master
     $ pip install -r REQUIREMENTS.pip
+
+**Note:** **EvernoteTagCloud** has been developed and tested with Python 3.6.4.
 
 **Note:** Installing [word_cloud](http://amueller.github.io/word_cloud/) using ``pip`` requires a compiler. Precompiled wheel packages for ``word_cloud`` are available, for more information please refer to the [README](https://github.com/amueller/word_cloud/blob/master/README.md) of the [word_cloud](https://github.com/amueller/word_cloud) project on GitHub.
 
